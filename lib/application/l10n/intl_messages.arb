@@ -1,0 +1,8 @@
+{
+  "@@last_modified": "2021-01-06T23:21:00.737995",
+  "applicationName": "Финансы",
+  "@applicationName": {
+    "type": "text",
+    "placeholders": {}
+  }
+}
