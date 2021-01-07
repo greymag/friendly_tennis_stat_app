@@ -5,10 +5,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_custom_theme/flutter_custom_theme.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get_it/get_it.dart';
 import 'package:innim_lib/innim_lib.dart';
 import 'package:innim_ui/innim_ui.dart';
 import 'package:tennis_stat/application/routes.dart';
 import 'package:tennis_stat/blocs/application/app/app_bloc.dart';
+import 'package:tennis_stat/repositories/respositories.dart';
 import 'package:tennis_stat/screens/launch/launch_screen.dart';
 
 import 'config.dart';
@@ -135,9 +137,13 @@ class TennisStatApp extends StatelessWidget {
     assert(child != null);
 
     // final config = AppConfig.of(context);
-    // final di = GetIt.instance;
+    final di = GetIt.instance;
     return MultiRepositoryProvider(
-      providers: const [],
+      providers: [
+        RepositoryProvider(
+          create: (context) => PlayerRepository(di.get()),
+        ),
+      ],
       child: child,
     );
   }

@@ -26,11 +26,14 @@ dependencies:
       ref: innim_ui/0.3
   get_it: ^5.0.1
   multiple_localization: ^0.1.0+5
+  json_annotation: ^3.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   intl_translation: ^0.17.9
+  build_runner: ^1.10.0
+  json_serializable: ^3.2.5
 
 flutter:
   uses-material-design: true
