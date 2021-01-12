@@ -7,7 +7,7 @@ import 'config.dart';
 Future<void> runAppWith(AppConfig config) async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runWith(
+  runWithDebugWrapper(
     config: config,
     app: TennisStatApp(config),
     onError: (exception, stack) {

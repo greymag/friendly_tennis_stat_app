@@ -33,7 +33,7 @@ class TennisStatApp extends StatelessWidget {
   TennisStatApp(AppConfig config, {Key key}) : super(key: key) {
     SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 
-    Bloc.observer = _ApplicationBlocObserver();
+    Bloc.observer = _ApplicationBlocObserver(logEnabled: true);
 
     DependencyInjectionInitializer.initialize(config);
   }
@@ -158,12 +158,14 @@ class TennisStatApp extends StatelessWidget {
 
     // final di = GetIt.instance;
 
-    return MultiBlocProvider(
-      providers: const [],
-      child: Builder(
-        builder: builder,
-      ),
-    );
+    // return MultiBlocProvider(
+    //   providers: const [],
+    //   child: Builder(
+    //     builder: builder,
+    //   ),
+    // );
+
+    return Builder(builder: builder);
   }
 
   Route<dynamic> _onGenerateRoute(RouteSettings settings) {
