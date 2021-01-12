@@ -51,6 +51,15 @@ class AppLocalizations {
     );
   }
 
+  // HomeScreen
+
+  String get playersHomeBtn {
+    return Intl.message(
+      'Игроки',
+      name: 'playersHomeBtn',
+    );
+  }
+
   // PlayersScreen
 
   String get playersTitle {
