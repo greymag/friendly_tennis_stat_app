@@ -46,8 +46,17 @@ class AppLocalizations {
 
   String get applicationName {
     return Intl.message(
-      'Финансы',
+      'Tennis stat',
       name: 'applicationName',
+    );
+  }
+
+  // PlayersScreen
+
+  String get playersTitle {
+    return Intl.message(
+      'Игроки',
+      name: 'playersTitle',
     );
   }
 }
