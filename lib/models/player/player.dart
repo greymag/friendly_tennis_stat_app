@@ -25,6 +25,8 @@ class Player extends Mappable {
 
   factory Player.fromJson(Map<String, Object> map) => _$PlayerFromJson(map);
 
+  String get fullName => '$firstName $lastName';
+
   @override
   Map<String, Object> toJson() => _$PlayerToJson(this);
 }
