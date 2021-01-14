@@ -17,7 +17,7 @@ class Player extends Mappable {
       {@required this.uid,
       @required this.firstName,
       @required this.lastName,
-      @required this.isRemoved})
+      this.isRemoved = false})
       : assert(uid != null),
         assert(firstName != null),
         assert(lastName != null),
