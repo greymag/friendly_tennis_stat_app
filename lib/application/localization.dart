@@ -60,6 +60,13 @@ class AppLocalizations {
     );
   }
 
+  String get startDayHomeBtn {
+    return Intl.message(
+      'Начать игровой день',
+      name: 'startDayHomeBtn',
+    );
+  }
+
   // PlayersScreen
 
   String get playersTitle {

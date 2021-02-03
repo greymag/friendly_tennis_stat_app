@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tennis_stat/screens/game_day/game_day_screen.dart';
 import 'package:tennis_stat/screens/home/home_screen.dart';
 import 'package:tennis_stat/screens/players/players_screen.dart';
 
 class AppRoutes {
   static const home = '/';
   static const players = '/players';
+  static const gameDay = '/gameDay';
 
   static Widget buildByRoute(BuildContext context, String route, Object args) {
     switch (route) {
@@ -13,6 +15,8 @@ class AppRoutes {
         return const HomeScreen();
       case AppRoutes.players:
         return const PlayersScreen();
+      case AppRoutes.gameDay:
+        return const GameDayScreen();
     }
 
     throw Exception('Unknown route: $route');
@@ -41,4 +45,5 @@ class AppRoutes {
 
 extension NavigatorStateRoutesExtension on NavigatorState {
   Future<void> pushPlayers() => pushNamed(AppRoutes.players);
+  Future<void> pushGameDay() => pushNamed(AppRoutes.gameDay);
 }
