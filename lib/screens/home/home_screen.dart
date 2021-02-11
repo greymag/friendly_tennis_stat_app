@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:innim_ui/innim_ui.dart';
-import 'package:list_ext/list_ext.dart';
 
 import 'package:tennis_stat/application/localization.dart';
 import 'package:tennis_stat/application/routes.dart';
