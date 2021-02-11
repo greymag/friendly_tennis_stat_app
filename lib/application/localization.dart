@@ -75,6 +75,15 @@ class AppLocalizations {
       name: 'playersTitle',
     );
   }
+
+  // GameDayScreen
+
+  String get gameDayTitle {
+    return Intl.message(
+      'Игровой день',
+      name: 'gameDayTitle',
+    );
+  }
 }
 
 extension LocalizationContextExtension on BuildContext {
