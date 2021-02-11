@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:innim_lib/innim_lib.dart';
 import 'package:innim_ui/innim_ui.dart';
 import 'package:tennis_stat/application/localization.dart';
-import 'package:tennis_stat/blocs/screens/bloc/players_bloc.dart';
+import 'package:tennis_stat/blocs/screens/players/players_bloc.dart';
 import 'package:tennis_stat/models/models.dart';
 
 class PlayersScreen extends StatelessWidget {
